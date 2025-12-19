@@ -545,3 +545,76 @@
 .profil-info-value {
     color: #555;
 }
+/* Règles */
+.profil-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.profil-section ul li {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, #ffeaa7, #fdcb6e);
+    border-radius: 15px;
+    font-weight: bold;
+    animation: statPop 0.4s;
+}
+
+/* Statistiques */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+}
+
+.stat-card {
+    background: linear-gradient(45deg, #4ecdc4, #44a08d);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    animation: statPop 0.5s;
+}
+
+.stat-value {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.stat-label {
+    opacity: 0.9;
+    text-transform: capitalize;
+}
+
+/* Bouton contact */
+.contact-button {
+    width: 100%;
+    margin-top: 30px;
+    padding: 18px;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #a29bfe, #6c5ce7);
+    color: white;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    transition: all 0.3s;
+}
+
+.contact-button:hover {
+    transform: scale(1.08) rotate(2deg);
+}
+
+/* Mobile friendly */
+@media (max-width: 768px) {
+    .profil-container {
+        padding: 25px;
+    }
+
+    .profil-header h2 {
+        font-size: 2.2em;
+    }
+}
