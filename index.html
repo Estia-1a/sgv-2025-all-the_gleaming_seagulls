@@ -16,10 +16,43 @@
 
         <nav>
             <button class="active" onclick="showPage('accueil')">Accueil</button>
-            <button onclick="showPage('conducteurs')">Nos Conducteurs</button>
+            <button onclick="showPage('annonces')">Nos Conducteurs</button>
         </nav>
 
-        <div id="accueil" class="page active">
+    <div id="accueil" class="page active">
+    <section class="hero-section">
+        <h2>Bienvenue sur CoivoInsolite !</h2>
+        <p class="description">
+            La plateforme de covoiturage la plus loufoque du Pays Basque, réservée aux étudiants de l'ESTIA Bidart. 
+            Que vous cherchiez un trajet en montgolfière, en charrette swappée ou sur un lama péruvien, 
+            vous trouverez forcément votre bonheur ici !
+        </p>
+    </section>
+
+    <section class="map-section">
+        <h3>📍 Notre zone de couverture</h3>
+        <div class="map-container">
+            <iframe 
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-1.6018%2C43.4186%2C-1.5508%2C43.4486&layer=mapnik&marker=43.4336,-1.5763" 
+                width="100%" 
+                height="400" 
+                style="border: 2px solid #ddd; border-radius: 12px;">
+            </iframe>
+        </div>
+        <p style="text-align: center; color: #666; margin-top: 10px;">
+            ESTIA Bidart - Technopole Izarbel
+        </p>
+    </section>
+
+    <section class="cta-section">
+        <button class="cta-button" onclick="showPage('annonces')">
+            🚗 Découvrir nos conducteurs déjantés
+        </button>
+    </section>
+</div>
+
+        <div id="annonces" class="page">
+        div id="accueil" class="page active">
             <div class="category-section">
                 <div class="category-title">Catégorie Véhicules Motorisés</div>
                 <div class="annonces-grid">
@@ -164,7 +197,10 @@
             </div>
         </div>
 
-        <div id="conducteurs" class="page"></div>
+
+</div>
+
+<div id="conducteurs" class="page"></div>
     </div>
 
     <script>
